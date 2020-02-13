@@ -150,7 +150,6 @@ internal class QueuedSocket(
         return deferred.promise
     }
 
-
     override fun <T : Serializable> registerTypeListener(clazz: Class<out T>, listener: (T) -> Serializable?) {
         synchronized(missedMessages) {
             checkMissedMessages(listener, clazz, outQueue)

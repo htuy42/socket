@@ -10,7 +10,8 @@ data class Machine(val name : String, val groups : List<String>, val properties 
         return load.compareTo(other.load)
     }
 
-    // note this only works from the lovely old department machines
+    // note this only works from the lovely old department machines. This line is basically the thing that means
+    // this and swarm only actually work at Brown
     fun sendSshCommand(command : String, silenced : Boolean = false){
         SystemUtilies.shellCommand("ssh $name $command",silenced = silenced)
     }

@@ -1,7 +1,6 @@
 package com.htuy.common
 
 import com.htuy.constant.pathInBaseDir
-import sun.plugin2.util.SystemUtil
 import java.io.File
 import java.util.concurrent.TimeUnit
 

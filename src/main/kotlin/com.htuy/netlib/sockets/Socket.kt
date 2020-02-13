@@ -9,9 +9,7 @@ typealias SocketCallback = (Serializable) -> Serializable?
 typealias Listener<I> = (I) -> Unit
 
 
-interface Socket
-
-{
+interface Socket{
 
     /**
      * Send a message without any explicit expectation of a response
